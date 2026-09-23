@@ -1417,13 +1417,121 @@ input {
 }
 
 .quote-role {
-  font-size: .75rem;
+  font-size: .75rem;r
   font-weight: 700;
 }
 
 .quote-org {
   font-size: .75rem;
   color: var(--on-surface-variant);
+}
+
+
+/* ---- CLOSING BANNER ---- */
+
+.closing {
+  width: 100%;
+  max-width: 80rem;
+  margin-inline: auto;
+  padding: 5rem 1.5rem;
+}
+
+.banner {
+  position: relative;
+  overflow: hidden;
+  border-radius: 1.5rem;
+  padding: 2.5rem;
+  text-align: center;
+  color: #fff;
+  background-image: linear-gradient(to top right, #7c2606, var(--primary), #2a4374);
+  box-shadow: var(--shadow-2xl);
+}
+
+.banner-glow {
+  position: absolute;
+  width: 24rem;
+  height: 24rem;
+  border-radius: 9999px;
+  filter: blur(64px);
+  pointer-events: none;
+}
+
+.banner-glow-amber {
+  right: -5rem;
+  top: -5rem;
+  background: rgba(251, 191, 36, .3);
+}
+
+.banner-glow-sky {
+  left: -5rem;
+  bottom: -5rem;
+  background: rgba(56, 189, 248, .3);
+}
+
+.banner-inner {
+  position: relative;
+  z-index: 10;
+  max-width: 42rem;
+  margin-inline: auto;
+}
+
+.banner-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+  padding: .375rem 1rem;
+  border-radius: 9999px;
+  background: rgba(255, 255, 255, .2);
+  border: 1px solid rgba(255, 255, 255, .3);
+  color: #fff;
+  font-size: .75rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  backdrop-filter: blur(8px);
+  box-shadow: var(--shadow-xs);
+}
+
+.banner-dot {
+  width: .5rem;
+  height: .5rem;
+  border-radius: 9999px;
+  background: var(--amber-300);
+  animation: pulse 2s cubic-bezier(.4, 0, .6, 1) infinite;
+}
+
+.banner-title {
+  font-family: var(--font-serif);
+  font-size: 1.875rem;
+  font-weight: 700;
+  line-height: 1.375;
+  margin-bottom: 1rem;
+}
+
+.banner-lead {
+  font-size: 1rem;
+  line-height: 1.625;
+  color: rgba(255, 255, 255, .9);
+  margin-bottom: 2rem;
+}
+
+.banner-cta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.banner-cta .btn {
+  width: 100%;
+  padding-inline: 2.25rem;
+}
+
+.banner-note {
+  font-size: .75rem;
+  font-weight: 500;
+  color: rgba(255, 255, 255, .8);
 }
 
 /*---- Footer -------------------------------------------------------------- */
