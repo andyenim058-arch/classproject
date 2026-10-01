@@ -1,1 +1,0 @@
-const andy=(name)=>{return "Hello"+name}
